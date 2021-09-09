@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICR Indonesia - Registration Form</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="assets/css/style.min.css">
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <div class="header-wrapper">
+                <div class="logo"><a href="index.html"><img src="assets/images/logo-2.png" alt="I Can Read"></a></div>
+            </div>
+        </div>
+    </header>
+
+    <section id="formulir">
+        <div class="container">
+            <div class="form-wrapper">
+                <div class="form-head">
+                    <h1>Formulir Registrasi</h1>
+                    <p>Silahkan isi kolom dibawah untuk melakukan proses registrasi</p>
+                </div>
+                <form action="">
+                    <div class="form-section">
+                        <h3>Data Orang Tua</h3>
+                        <div class="form-group">
+                            <label for="nama-lengkap-ortu">Nama Lengkap Orang Tua *</label>
+                            <input type="text" class="input-control" id="nama-lengkap-ortu" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email-orang-tua">Email Orang Tua *</label>
+                            <input type="email" class="input-control" id="email-orang-tua" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone-orang-tua">Telp / WhatsApp Orang Tua *</label>
+                            <input type="tel" class="input-control" id="phone-orang-tua" required>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h3>Data Anak / Calon Siswa</h3>
+                        <div class="form-group">
+                            <label for="nama-lengkap-anak">Nama Lengkap Anak *</label>
+                            <input type="text" class="input-control" id="nama-lengkap-anak" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="usia-anak">Usia (Tahun) *</label>
+                            <input type="number" class="input-control" id="usia-anak" min="3" max="50" required value="3">
+                        </div>
+                        <div class="form-group">
+                            <label for="tingkatan-sekolah">Tingkatan Sekolah *</label>
+                            <select name="" id="tingkatan-sekolah" class="input-control">
+                                <option value="">-- Pilih Tingkatan --</option>
+                                <option value="">PlayGroup</option>
+                                <option value="">TK</option>
+                                <optgroup label="Sekolah Dasar">
+                                    <option value="">SD Kelas 1</option>
+                                    <option value="">SD Kelas 2</option>
+                                    <option value="">SD Kelas 3</option>
+                                    <option value="">SD Kelas 4</option>
+                                    <option value="">SD Kelas 5</option>
+                                    <option value="">SD Kelas 6</option>
+                                </optgroup>
+                                <optgroup label="Sekolah Menengah Pertama">
+                                    <option value="">SMP Kelas 7</option>
+                                    <option value="">SMP Kelas 8</option>
+                                    <option value="">SMP Kelas 9</option>
+                                </optgroup>
+                                <optgroup label="Sekolah Menengah Atas">
+                                    <option value="">SMA Kelas 10</option>
+                                    <option value="">SMA Kelas 11</option>
+                                    <option value="">SMA Kelas 12</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <p>Prior to registering for the Grammar Booster course, please read through our Terms and Conditions and Privacy Policy (click here to view).  By registering for the Grammar Booster course online, you hereby acknowledged that you understood and agree to abide by our <a href="#">Terms & Conditions and Privacy Policy</a> as stipulated by ICR Limited.</p>
+                        <p>
+                            <input type="checkbox" name="" id="agreement">
+                            <label for="agreement">I agree to receive updates, news, and promotions on products & services from ICR Ltd.</label>
+                        </p>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="button" id="pay-button">Pay!</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+    </footer>
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript"
+            src="https://app.sandbox.midtrans.com/snap/snap.js"
+            data-client-key="<CLIENT-KEY>"></script>
+    <script type="text/javascript">
+        var payButton = document.getElementById('pay-button');
+        payButton.addEventListener('click', function () {
+          snap.pay('<SNAP_TOKEN>');
+        });
+      </script>
+</body>
+</html>
