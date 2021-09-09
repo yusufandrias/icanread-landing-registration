@@ -26,7 +26,7 @@
                     <h1>Formulir Registrasi</h1>
                     <p>Silahkan isi kolom dibawah untuk melakukan proses registrasi</p>
                 </div>
-                <form action="">
+                <form action="" id="registration-form">
                     <div class="form-section">
                         <h3>Data Orang Tua</h3>
                         <div class="form-group">
@@ -81,6 +81,56 @@
                         </div>
                     </div>
 
+                    <div class="form-section">
+                        <h3>ICR Centre</h3>
+                        <div class="form-group">
+                            <label for="city">Kota Anda</label>
+                            <select name="" id="" class="input-control">
+                                <option value="">-- Pilih Kota --</option>
+                                <optgroup label="JABODETABEK">
+                                    <option value="">Jakarta</option>
+                                    <option value="">Bogor</option>
+                                    <option value="">Depok</option>
+                                    <option value="">Tangerang</option>
+                                </optgroup>
+                                <optgroup label="Jawa Barat">
+                                    <option value="">Bandung</option>
+                                    <option value="">Karawang</option>
+                                    <option value="">Depok</option>
+                                    <option value="">Tangerang</option>
+                                </optgroup>
+                                <optgroup label="Jawa Tengah">
+                                    <option value="">Semarang</option>
+                                    <option value="">Solo</option>
+                                </optgroup>
+                                <optgroup label="Jawa Tengah">
+                                    <option value="">Surabaya</option>
+                                    <option value="">Malang</option>
+                                </optgroup>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Pilih ICR Centre Terdekat</label>
+                            <select name="" id="" class="input-control">
+                                <option value="">-- Pilih Lokasi --</option>
+                                <option value="">Alam Sutera</option>
+                                <option value="">Bali Renon</option>
+                                <option value="">Bandung - Arjuna</option>
+                                <option value="">Bandung Dago</option>
+                                <option value="">BSD City 1</option>
+                                <option value="">BSD City 2</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="">Pilih Kursus yang Ingin Diambil</label>
+                            <select name="" id="" class="input-control">
+                                <option value="">-- Pilih Kursus --</option>
+                                <option value="">Fun With Grammar Booster</option>
+                                <option value="">Flying With Gramamr Booster</option>
+                            </select>
+                        </div>
+                    </div>
+
                     <div class="form-group">
                         <p>Prior to registering for the Grammar Booster course, please read through our Terms and Conditions and Privacy Policy (click here to view).  By registering for the Grammar Booster course online, you hereby acknowledged that you understood and agree to abide by our <a href="#">Terms & Conditions and Privacy Policy</a> as stipulated by ICR Limited.</p>
                         <p>
@@ -90,7 +140,7 @@
                     </div>
 
                     <div class="form-group">
-                        <button type="button" id="pay-button">Pay!</button>
+                        <button type="submit" id="pay-button" class="form-submit">Kirim Formulir</button>
                     </div>
                 </form>
             </div>
